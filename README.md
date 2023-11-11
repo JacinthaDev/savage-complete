@@ -5,7 +5,19 @@
 # About this project
 A message board to add 21 Savage lyrics.
 
-View my project here: 
+
+#### View my project here: 
+
+### Installation
+
+1. Clone repo
+2. run `npm install`
+
+### Usage
+
+1. run `npm run savage`
+2. Navigate to `localhost:3000`
+
 
 
 ## How It's Made:
@@ -23,20 +35,3 @@ Take a look at similar projects!
 
 #### Backend Technologies
 MongoDB Atlas: https://www.mongodb.com/atlas/database
-Heroku Hosting: 
-
-
-
-
-
-![21 Savage](public/21savage.jpg)
-
-## Installation
-
-1. Clone repo
-2. run `npm install`
-
-## Usage
-
-1. run `npm run savage`
-2. Navigate to `localhost:3000`
