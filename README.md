@@ -1,6 +1,7 @@
 # 🚀21 Savage
 
-<img width="1200" height= "400" alt="21 Savage" src="/public/21savage.png">
+<img width="516" alt="21savage" src="https://github.com/JacinthaDev/savage-complete/assets/129231721/ca646664-0d85-48c0-966c-844ca73dcc3e">
+
 
 # About this project
 A message board to add 21 Savage lyrics.
