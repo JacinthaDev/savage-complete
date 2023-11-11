@@ -24,7 +24,7 @@ A message board to add 21 Savage lyrics.
 ## How It's Made:
 Tech used: JavaScript, Node.js. Express.js, MongoDB
 
-This is a full stack message board that allows you to enter a message, upvote, downvote, and delete your and other messages. Instructions to run this app are below. 
+This is a full stack message board that allows you to enter a message, upvote, downvote, and delete your and other messages. 
 
 
 ## Lessons Learned:
