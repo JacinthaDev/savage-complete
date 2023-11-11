@@ -6,14 +6,14 @@
 A message board to add 21 Savage lyrics.
 
 
-#### View my project here: 
+## View my project here: 
 
-### Installation
+#### Installation
 
 1. Clone repo
 2. run `npm install`
 
-### Usage
+#### Usage
 
 1. run `npm run savage`
 2. Navigate to `localhost:3000`
