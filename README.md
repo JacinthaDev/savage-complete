@@ -33,6 +33,9 @@ This was my first time building a full-stack application. I learned how to make 
 ## Examples:
 Take a look at similar projects!
 
+Packing List: https://github.com/JacinthaDev/personal-express
 
-#### Backend Technologies
+Library Catalog: https://github.com/JacinthaDev/personalfullstack2
+
+## Backend Technologies
 MongoDB Atlas: https://www.mongodb.com/atlas/database
