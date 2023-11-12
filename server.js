@@ -2,10 +2,11 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
+require('dotenv').config();
 
-var db, collection;
+let db, collection;
 
-const url = "mongodb+srv://demo:demo@cluster0-q2ojb.mongodb.net/test?retryWrites=true";
+let url= process.env.dbString
 const dbName = "demo";
 
 app.listen(3000, () => {
@@ -28,7 +29,6 @@ app.get('/', (req, res) => {
     { $addFields: { "totalVotes": { $subtract: [ "$thumbUp", "$thumbDown"] } } },
     { $sort: { "totalVotes": -1 }}]).toArray((err, result) => {
     if (err) return console.log(err)
-    console.log(result)
     res.render('index.ejs', {messages: result})
     
   })
@@ -36,7 +36,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/messages', (req, res) => {
-  console.log(req.body)
   db.collection('messages').insertOne({name: req.body.name, msg: req.body.msg, thumbUp: 0, thumbDown:0}, (err, result) => {
     if (err) return console.log(err)
     console.log('saved to database')
@@ -45,7 +44,6 @@ app.post('/messages', (req, res) => {
 })
 
 app.put('/messages', (req, res) => {
-  console.log(req.body)
   const upOrDown = req.body.hasOwnProperty('thumbDown') ? 'thumbDown' : 'thumbUp'
   db.collection('messages')
   .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
